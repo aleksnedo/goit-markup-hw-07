@@ -31,10 +31,13 @@
   letter-spacing: 0.03em;
   color: var(--third-text-color);
   transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
 }
 
-.address__mail,
-.address__tel {
+.address__contacts {
   position: relative;
   font-style: normal;
   font-size: 14px;
@@ -42,15 +45,10 @@
   letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
   transition: color 250ms var(--timing-function);
-}
-
-.address__map-link:hover,
-.address__map-link:focus,
-.address__mail:hover,
-.address__mail:focus,
-.address__tel:hover,
-.address__tel:focus {
-  color: var(--color-accent);
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
 }
 
 .socials__footer {

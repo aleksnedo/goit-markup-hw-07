@@ -13,14 +13,19 @@
   justify-content: center;
   transition: background-color 250ms var(--timing-function),
     transform 100ms var(--timing-function);
-}
 
-.socials__link--gray {
-  background-color: #ffffff10;
-}
+  &--gray {
+    background-color: #ffffff10;
+  }
 
-.socials__link:active {
-  transform: scale(1.1);
+  &:active {
+    transform: scale(1.1);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--social-clr-bcg);
+  }
 }
 
 .socials__item:not(:last-child) {
@@ -30,18 +35,13 @@
 .socials__icon {
   fill: var(--social-clr-primery);
   transition: fill 250ms var(--timing-function);
-}
 
-.socials__icon--white {
-  fill: var(--social-clr-secondary);
-}
+  &--white {
+    fill: var(--social-clr-secondary);
+  }
 
-.socials__link:hover,
-.socials__link:focus {
-  background-color: var(--social-clr-bcg);
-}
-
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
-  fill: var(--social-clr-secondary);
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--social-clr-secondary);
+  }
 }

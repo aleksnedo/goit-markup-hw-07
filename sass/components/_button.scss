@@ -16,13 +16,12 @@
   border: none;
   transition: background-color 250ms var(--timing-function),
     transform 100ms var(--timing-function);
-}
 
-.btn:active {
-  transform: scale(0.9);
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: var(--bcg-color-hero-hover);
+  &:hover,
+  &:focus {
+    background-color: var(--bcg-color-hero-hover);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
 }

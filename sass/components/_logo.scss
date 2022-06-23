@@ -4,16 +4,15 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
+  &--dark {
+    color: var(--secondary-text-color);
+  }
 
-.logo--dark {
-  color: var(--secondary-text-color);
-}
+  &--light {
+    color: var(--third-text-color);
+  }
 
-.logo--light {
-  color: var(--third-text-color);
-}
-
-.logo__accent {
-  color: var(--color-accent);
+  &__accent {
+    color: var(--color-accent);
+  }
 }
